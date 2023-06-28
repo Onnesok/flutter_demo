@@ -18,7 +18,12 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[400],
       ),
       body: Center(
-        child:
+        child: FilledButton(
+          onPressed: () {
+            print('button e guta disos kn');
+          },
+          child: Text('button'),
+        ),
       ),
     );
   }
