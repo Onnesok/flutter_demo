@@ -3,10 +3,7 @@
 
 This covers some example code for Flutter framework by google using dart programming language.
 
-```
-ok
 
-```
 
 
 
@@ -167,3 +164,28 @@ class Home extends StatelessWidget {
 
 ``` ctrl + s ``` to auto run and save
 
+## Image assets from network and assets
+For network image
+```
+Image(
+    image: NetworkImage('https://img-9gag-fun.9cache.com/photo/arox7VX_460s.jpg'),
+        ),
+
+```
+For asset image
+
+[pubesc.yaml change code here <--](https://raw.githubusercontent.com/Onnesok/img_dump/main/assets.png)
+```
+Image(
+    image: AssetImage('assets/hmm.jpg'),
+    ),
+```
+
+shortcut
+
+```
+Image.asset('assets/hmm.jpg'),
+
+```
+
+## Buttons and icons
