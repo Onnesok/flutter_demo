@@ -18,7 +18,7 @@ This covers some example code for Flutter framework by google using dart program
 - Rows
 - Colums
 - Flutter outline and shortcuts
-- Expandded widgets
+- Expanded widgets
 
 ## Flutter architecture
 
@@ -373,3 +373,89 @@ Column(
 
 ![shortcut](https://sayingimages.com/wp-content/uploads/2021/02/bad-friend-short-cut-meme.jpg)
 
+Hover mouse over a function and a light bulb will appear. When press the bulb life jinga dala. You can wrap, remove or replace widgets with any other widgets without writing any code again.
+
+Next on the right side there is a menu called flutter outline. open it. it will show nothing. Then press ``` ctrl + function that I wanna see ``` and then it will show full flutter tree there.
+
+```
+Center(
+        child: Padding(
+          padding: EdgeInsets.all(60),  //It's mainly  mergins space
+          child: Container(
+            padding: EdgeInsets.all(30),   // it's paddding or inside space
+            color: Colors.amber,
+            child: Text('helloo theee'),
+          ),
+        ),
+      ),
+
+```
+we can use direct padding to for padding without a container.
+
+## Expanded widgets
+
+For me if I forget
+
+```
+Row(
+        children: [
+          Container(
+            padding: EdgeInsets.all(20),
+            color: Colors.red,
+            child: Text('one'),
+          ),
+          Container(
+            color: Colors.green,
+            padding: EdgeInsets.all(50),
+            margin: EdgeInsets.all(20),
+            child: Text('two'),
+          ),
+          Container(
+            color: Colors.amber,
+            padding: EdgeInsets.all(70),
+            child: Text('three'),
+          ),
+        ],
+      ),
+
+```
+Expanded widgets expands duh ( :| )
+```
+Row(
+        children: [
+          Expanded(
+            flex: 4,
+              child: Image.asset('assets/hmm.jpg')
+          ),
+          Expanded(
+            flex: 10,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.red,
+              child: Text('one'),
+            ),
+          ),
+          Expanded(
+            flex: 4,
+            child: Container(
+              color: Colors.green,
+              padding: EdgeInsets.all(30.0),
+              child: Text('two'),
+            ),
+          ),
+          Expanded(
+            flex: 5,
+            child: Container(
+              color: Colors.amber,
+              padding: EdgeInsets.all(30.0),
+              child: Text('three'),
+            ),
+          ),
+        ],
+      ),
+
+```
+
+here in ```flex: 3 ``` flex means we can set the width any container will take. 3 means here it will take 3 portion of it's width.
+
+without flex everything will take same space.
