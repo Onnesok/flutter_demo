@@ -474,7 +474,7 @@ here in ```flex: 3 ``` flex means we can set the width any container will take. 
 without flex everything will take same space.
 ## Simple ui design
 
-![good job](https://raw.githubusercontent.com/Onnesok/img_dump/main/inspired-making-progress-meme.webp)
+Lets do a simple app
 
 ```
 import 'package:flutter/material.dart';
@@ -620,3 +620,5 @@ class Home extends StatelessWidget {
 }
 
 ```
+
+![good job](https://raw.githubusercontent.com/Onnesok/img_dump/main/inspired-making-progress-meme.webp)
