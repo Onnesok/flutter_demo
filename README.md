@@ -117,7 +117,7 @@ pubspec.yaml changed code -->
 
 Tired of reloading again and again. So do Stateless widgets
 
-[See this to get it.](https://www.devopsschool.com/blog/wp-content/uploads/2020/08/flutter_widget.png)
+![See this to get it.](https://www.devopsschool.com/blog/wp-content/uploads/2020/08/flutter_widget.png)
 
 To build the class with android studio use this shortcut ``` Stateless ``` and class will be created. Example::::
 
@@ -168,9 +168,9 @@ Image(
         ),
 
 ```
-For asset image
+For asset (image pubesc.yaml change code here) <--
 
-[pubesc.yaml change code here <--](https://raw.githubusercontent.com/Onnesok/img_dump/main/assets.png)
+![pubesc.yaml change code here <--](https://raw.githubusercontent.com/Onnesok/img_dump/main/assets.png)
 ```
 Image(
     image: AssetImage('assets/hmm.jpg'),
