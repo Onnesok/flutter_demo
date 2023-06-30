@@ -3,10 +3,6 @@
 
 This covers some example code for Flutter framework by google using dart programming language.
 
-
-
-
-
 ![Unga bunga](https://raw.githubusercontent.com/Onnesok/img_dump/main/hmm.jpg)
 
 
@@ -24,7 +20,7 @@ This covers some example code for Flutter framework by google using dart program
 - Flutter outline and shortcuts
 - Expandded widgets
 
-# Flutter architecture
+## Flutter architecture
 
 ![architecture](https://applover.com/wp-content/uploads/2022/10/Grafika-2_-Flutter-architecture-%E2%80%93-best-practices-for-your-mobile-projects.png)
 
@@ -287,12 +283,13 @@ Container(padding: EdgeInsets.all(20),
           color: Colors.blueAccent,
           child: Text('container'),
         ),
+
 ```
 padding is the birer part
 
 margin is the vitorer part
 
-we use ``` EdgeInsets.all ```or ``` EdgeInsets.fromTRB ``` or something like this to use margin or padding for our needs....
+we use ``` EdgeInsets.all ``` or  ``` EdgeInsets.fromTRB ``` or something like this to use margin or padding for our needs....
 ## Rows
 
 For multiple widgets entry in row wise we use rows widget.
@@ -300,5 +297,79 @@ For multiple widgets entry in row wise we use rows widget.
 Example:::
 
 ```
+Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(30),
+            color: Colors.green,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(20, 40, 20, 40),
+            margin: EdgeInsets.all(20),
+            child: Text('two'),
+            decoration: BoxDecoration(
+              color: Colors.red,
+              border: Border.all(
+                color: Colors.purpleAccent,
+                width: 10,
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(20, 50, 20, 50),
+            color: Colors.amber,
+            margin: EdgeInsets.all(20),
+            child: Text('three'),
+          ),
+        ],
+      ),
+      
+```
+
+mainAxisAlignment means align in horizontally as horizontal is the main axis for row.
+Oposite for the crossAxisAlignment.
+
+![pic](https://miro.medium.com/v2/resize:fit:976/1*PVOEl-D_pWvfEY2i1fXU-g.png)
+## Colum
 
 ```
+Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            padding: EdgeInsets.all(20),
+            margin: EdgeInsets.all(30),
+            color: Colors.green,
+            child: Text('one'),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(20, 40, 20, 40),
+            margin: EdgeInsets.all(20),
+            child: Text('two'),
+            decoration: BoxDecoration(
+              color: Colors.red,
+              border: Border.all(
+                color: Colors.purpleAccent,
+                width: 10,
+              ),
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.fromLTRB(20, 50, 20, 50),
+            color: Colors.amber,
+            margin: EdgeInsets.all(20),
+            child: Text('three'),
+          ),
+        ],
+      ),
+
+```
+## Flutter outline and shortcuts
+
+![shortcut](https://sayingimages.com/wp-content/uploads/2021/02/bad-friend-short-cut-meme.jpg)
+
