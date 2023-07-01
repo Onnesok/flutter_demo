@@ -6,8 +6,16 @@ void main() {
   ));
 }
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
+
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+  int count = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +28,7 @@ class Home extends StatelessWidget {
         elevation: 0, // removes the drop shadow from appbar
       ),
       body: Padding(
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -118,23 +126,45 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: 10,),
-                Text(
-                  'ratulhasan9464@gmail.com,',
-                  style: TextStyle(
-                    letterSpacing: 2,
-                    color: Colors.red[400],
+                Expanded(
+                  child: Text(
+                    'ratulhasan9464@gmail.com',
+                    style: TextStyle(
+                      letterSpacing: 2,
+                      color: Colors.red[400],
+                    ),
                   ),
-                )
+                ),
               ],
             ),
+            SizedBox(height: 40,),
+            Center(
+              child: Expanded(
+                child: Text(
+                  '$count',
+                  style: TextStyle(
+                    letterSpacing: 2,
+                    color: Colors.green[400],
+                    fontSize: 50,
+                    fontFamily: 'IndieFlower',
+                  ),
+                ),
+              ),
+            ),
+
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('guta dis na sagol');
+          setState(() {
+            count+=1;
+          });
         },
-        child: Text('hehe'),
+        child: Icon(
+          Icons.add,
+          color: Colors.black87,
+        ),
       ),
     );
   }
