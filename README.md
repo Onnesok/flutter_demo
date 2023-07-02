@@ -19,7 +19,8 @@ This covers some example code for Flutter framework by google using dart program
 - Colums
 - Flutter outline and shortcuts
 - Expanded widgets
-
+- build an app ui
+- Stateful widgets
 ## Flutter architecture
 
 ![architecture](https://applover.com/wp-content/uploads/2022/10/Grafika-2_-Flutter-architecture-%E2%80%93-best-practices-for-your-mobile-projects.png)
@@ -805,3 +806,15 @@ type ``` stf ``` and it will create a Stateful class for you. Inside the widget 
 to set state we have to use anaother widget called setState widget. It does unga bunga change inside the code or changes state.
 
 [Code here](https://github.com/Onnesok/flutter_demo/blob/master/example%20files/stateful%20widget%20code.dart)
+
+
+But if you build and rul the release version of the app then there will be a white screen at the bottom which is not good right...! also things won't work. So to solve this remove expanded widget which is wraping ```$count```.
+There you go.... problem solved...
+
+![hehhee](https://i.imgflip.com/7rapdd.jpg)
+
+
+# Next
+This file is getting big.
+So, here's the next part.
+[Next part](https://github.com/Onnesok)
