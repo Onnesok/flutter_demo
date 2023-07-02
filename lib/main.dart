@@ -16,6 +16,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   int count = 0;
+  String unga = 'Email me';
 
   @override
   Widget build(BuildContext context) {
@@ -28,14 +29,15 @@ class _HomeState extends State<Home> {
         elevation: 0, // removes the drop shadow from appbar
       ),
       body: Padding(
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 20,),
             Center(
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/hmm.jpg'),
-                radius: 40,
+                radius: 50,
               ),
             ),
             Divider(
@@ -96,21 +98,29 @@ class _HomeState extends State<Home> {
                 SizedBox(
                   width: 15,
                 ),
-                ElevatedButton.icon(
-                  onPressed: () {},
-                  icon: Icon(
-                    Icons.mail,
-                    color: Colors.red,
-                  ),
-                  label: Text(
-                    'Email me',
-                    style: TextStyle(
-                      color: Colors.black87,
-                      letterSpacing: 2,
+                Expanded(
+                  child: ElevatedButton.icon(
+                    onPressed: () {
+                      setState(() {
+                        unga = 'sokh er to komti nai';
+                      });
+                    },
+                    icon: Icon(
+                      Icons.mail,
+                      color: Colors.red,
                     ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.amberAccent,
+                    label: Text(
+                      '$unga',
+                      style: TextStyle(
+                        color: Colors.black,
+                        //fontFamily: 'Bruno',
+                        fontSize: 20,
+                        //letterSpacing: 2,
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white54,
+                    ),
                   ),
                 ),
               ],
@@ -139,15 +149,13 @@ class _HomeState extends State<Home> {
             ),
             SizedBox(height: 40,),
             Center(
-              child: Expanded(
-                child: Text(
-                  '$count',
-                  style: TextStyle(
-                    letterSpacing: 2,
-                    color: Colors.green[400],
-                    fontSize: 50,
-                    fontFamily: 'IndieFlower',
-                  ),
+              child: Text(
+                '$count',
+                style: TextStyle(
+                  letterSpacing: 2,
+                  color: Colors.green[400],
+                  fontSize: 50,
+                  fontFamily: 'IndieFlower',
                 ),
               ),
             ),
@@ -169,3 +177,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+
