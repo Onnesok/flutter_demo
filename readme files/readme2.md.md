@@ -1,12 +1,12 @@
 
 # Flutter demo second part
 
-congratulations you made this far
+congratulations you made this far.
 
+![congrats](https://i.imgflip.com/1glr40.jpg)
 
-## Roadmap
+## Next lessons
 
-- Additional browser support
-
-- Add more integrations
+- List
+- Cards
 
