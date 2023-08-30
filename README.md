@@ -144,13 +144,14 @@ pubspec.yaml changed code -->
 
 
 
+ 
 ## Stateless widgets and hot reload
 
 Tired of reloading again and again. So do Stateless widgets
 
 ![See this to get it.](https://www.devopsschool.com/blog/wp-content/uploads/2020/08/flutter_widget.png)
 
-To build the class with android studio use this shortcut ``` Stateless ``` and class will be created. Example::::
+To build the class with android studio use this shortcut ``` stless ``` and class will be created. Example::::
 
 ```
 import 'package:flutter/material.dart';
